@@ -3,6 +3,20 @@ REM start.bat - double-click to run collector.ps1 from USB scripts folder
 
 SETLOCAL
 
+REM Display Gihan IT Logo
+echo.
+echo  ===================================================
+echo   ####   ##  ##   ##     ##     ##   ##     ##  ######
+echo  ##      ##  ##   ##    ####    ###  ##     ##    ##
+echo  ## ###  ##  #######   ##  ##   #######     ##    ##
+echo  ##  ##  ##  ##   ##  ########  ##  ###     ##    ##   
+echo   ####   ##  ##   ##  ##    ##  ##   ##     ##    ##
+echo  ===================================================
+echo                      Gihan IT
+echo       Copyright (C) 2025 - All Rights Reserved
+echo  ===================================================
+echo.
+
 REM Check for administrator privileges
 net session >nul 2>&1
 if %errorLevel% == 0 (
