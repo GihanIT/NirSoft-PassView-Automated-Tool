@@ -1,2 +1,1 @@
-some tools output need to manual save. 
-you need to manual save using GUI befor app close
+Some tools output need to manual save. >> So you need to manual save using GUI befor app close
