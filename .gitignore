@@ -1,0 +1,44 @@
+# NirSoft Password Recovery USB Collector — .gitignore
+# https://www.nirsoft.net/password_recovery_tools.html
+
+# --- Runtime outputs (regenerated on every collector run) ---
+# Rich-format folder created by collector.ps1 with date + time + PC + (User)
+# suffix. This is the ONLY physical folder the script creates per run (an
+# earlier date-only mirror folder was removed).
+# Example: results/20260722_111250 ASUSi7-K55VD (Utente)/
+# Pattern: 8 digits + _ + 6 digits + space + any + ( + any + ) + trailing /.
+results/[0-9]*_[0-9]* *(*)*/
+# Diagnostic-report folders created by scripts\report.bat
+# Example: results/IpConfigReport_20260722_111250/
+results/IpConfigReport_*/
+# results/readme.txt is project documentation and is intentionally committed
+
+# --- Diagnostic scratch ---
+# Working area for probe scripts and intermediate logs created during development
+results/_dryrun_cli_test/
+
+# --- Backup / scratch directories ---
+# .bkp/ mirrors the project for safety nets; do NOT version
+.bkp/
+
+# --- NirSoft downloaded archives ---
+# tools/zip/ contains the all-in-one NirSoft password-tools archive that we
+# extract NirSoft EXEs from. Re-downloadable, large, does not belong in git.
+tools/zip/
+
+# --- Backup files (safety net) ---
+# Defensive: ignore any .bak / .BAK / .backup / .bkp files anywhere in the tree.
+# (An already-tracked scripts/collector.ps1.BAK stays tracked; this rule only
+# prevents ADDITIONAL such files from being staged.)
+*.bak
+*.BAK
+*.backup
+*.bkp
+
+# --- OS / editor cruft ---
+Thumbs.db
+.DS_Store
+*.swp
+*~
+.vs/
+.idea/

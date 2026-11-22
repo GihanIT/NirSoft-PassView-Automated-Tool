@@ -1,0 +1,7 @@
+/stext <Filename> 	Save the list of security programs into a simple text file.
+/stab <Filename> 	Save the list of security programs into a tab-delimited text file.
+/scomma <Filename> 	Save the list of security programs into a comma-delimited text file (csv).
+/stabular <Filename> 	Save the list of security programs into a tabular text file.
+/shtml <Filename> 	Save the list of security programs into HTML file (Horizontal).
+/sverhtml <Filename> 	Save the list of security programs into HTML file (Vertical).
+/sxml <Filename> 	Save the list of security programs into XML file. 
